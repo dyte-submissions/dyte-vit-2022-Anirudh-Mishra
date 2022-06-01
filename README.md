@@ -148,7 +148,12 @@ Given below are the libraries/packages required beforehand for smooth functionin
    ```
    ![image](https://user-images.githubusercontent.com/63184549/171473449-fd138453-dc36-4630-a6ad-c6c7b616b9ff.png)
    ![image](https://user-images.githubusercontent.com/63184549/171475575-18f346b8-b2d2-4ceb-a532-9d28d7eef75d.png)
-  
+    
+   Or if you have downloaded the index.exe file you may use the command
+   ```sh
+   index <data_file_name>.csv <dependency_name>@<required_version> --no-update
+   ```
+   
    If you want to further create a pull request for updation proceed to further steps.
    
 4. Type the following command if you want to create a pull request of the updation changes of the stated dependency to required version
