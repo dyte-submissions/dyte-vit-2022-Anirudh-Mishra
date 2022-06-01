@@ -49,7 +49,6 @@ This project contains a python script that checks specified repositories for whe
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 ### Built With
 
 * [Python](https://www.python.org/)
