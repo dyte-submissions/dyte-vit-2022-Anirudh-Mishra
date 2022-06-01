@@ -192,7 +192,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/Anirudh30502) - mishraanirudhmail@gmail.com
+Anirudh Mishra - [Anirudh30502](https://twitter.com/Anirudh30502) - mishraanirudhmail@gmail.com
 
 Project Link: [https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra](https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra)
 
