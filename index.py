@@ -44,13 +44,14 @@ def hello(filename:str, dependency: str, update: bool = True):
             git.Git(path).clone(dataframe.iloc[i,1])
             
         links.append(dataframe.iloc[i,1])           # Storing repo names for future usage
-    
+    links.sort()
+    i = 0
     for file in os.listdir(path):
         loc = path + '\\' + file
         file1 = loc + '\\' + 'package.json'
         
-        i, version = 0, "0"
-        with open(file1, "r") as f:              
+        version = "0"
+        with open(file1, "r") as f:           
             my_dict = json.load(f)                          # Opening the package.json files in read mode for checking dependency versions
             depname, reqversion = dependency.split("@") 
             if(depname in my_dict['dependencies'].keys()):  # Case to monitor if the dependency is present or not in the project
