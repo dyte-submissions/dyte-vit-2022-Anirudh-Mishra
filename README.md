@@ -164,7 +164,7 @@ Given below are the libraries/packages required beforehand for smooth functionin
    index <data_file_name>.csv <dependency_name>@<required_version> --update
    ```
    ![image](https://user-images.githubusercontent.com/63184549/171484996-4b42bda5-f166-4c90-a710-39e170b9ba1e.png)
-   ![image](https://user-images.githubusercontent.com/63184549/171479977-5f22d880-f60c-4a32-85bf-1e19b96a1ddd.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171485209-7f893d9a-8c9b-44a0-95f2-24227646c056.png)
    
 5. Go to the repositories that you created to check whether a new branch by the name 'updated-branch' has been created in case of inadequate dependency versions to        mark the success of required changes.<br><br>
    ![image](https://user-images.githubusercontent.com/63184549/171480474-8bf646bf-f652-47b4-9221-9244e3ac4341.png)
