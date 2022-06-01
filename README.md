@@ -34,10 +34,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">SDK Dependency Updation Tool</h3>
 
   <p align="center">
-    project_description
+    This project contains a python script that extracts mentioned repositories, checks the version of the mentioned dependencies by comparing them with the required versions and provides an option to update the dependencies to the required version if they are dated, thus generating a pull request with the updated dependency versions, automating and making it more convenient for the user.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -93,14 +93,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [Node.js](https://nodejs.org/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -195,9 +192,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/Anirudh30502) - mishraanirudhmail@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra](https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
