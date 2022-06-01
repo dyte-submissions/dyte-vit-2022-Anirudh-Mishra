@@ -83,9 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project contains a python script that checks specified repositories for whether the specified dependencies satisfy specified version requirements by crawling the package.json and package-lock.json file. It produces an output file stating the validation of the satisfaction of each repository. Another feature of the project involves updation of the dependencies and creation of a pull request for the same and stating of the pull request link in an output file.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -106,32 +104,69 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+In order for the tool to work, it is mandatory that the repositories being worked upon belong to the user or contains the user as a collaborator in order for the tool to function appropriately. 
+
+Given below are the libraries/packages required beforehand for smooth functioning of the tool/script along with their install command.
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
+* typer
+  ```sh
+  pip install typer
+  ```
+
+* python-git
+  ```sh
+  pip install python-git
+  ```
+  
+* os
+  ```sh
+  pip install os
+  ```
+  
+* glob
+  ```sh
+  pip install glob
+  ```
+  
+* json
+  ```sh
+  pip install json
+  ```
+
+* requests
+  ```sh
+  pip install requests
+  ```
+  
+* subprocess
+  ```sh
+  pip install subprocess
+  ```
+
+* PyGithub
+  ```sh
+  pip install github
+  ```
+
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra.git)
    ```
-3. Install NPM packages
+2. Install NPM and python packages as mentioned in prerequisite section
    ```sh
-   npm install
+   npm install <package_name>
+   pip install <package_name>
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Generate a personal github access token by navigating to Setting>Developer Options>Personal Access Tokens. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -140,9 +175,26 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Create a CSV file by a custom name <data_file_name> containing two columns namely, the repository name and the repository link.
+
+2. Open terminal/cmd on your desktop and navigate to the directory of the cloned project.
+
+3. Type the following command if you just want an intimation as to which repositories do not match the requirement of the stated version of a dependency
+   ```sh
+   python ./index.py <data_file_name>.csv <dependency_name>@<required_version> --no-update
+   ```
+   If you want to further create a pull request for updation proceed to further steps.
+   
+4. Type the following command if you want to create a pull request of the updation changes of the stated dependency to required version
+   ```sh
+   index <data_file_name>.csv <dependency_name>@<required_version> --update
+   ```
+   
+5. Go to the repositories that you created to check whether a new branch by the name 'updated-branch' has been created in case of inadequate dependency versions to        mark the success of required changes.
+
+6. Go to the pull requests section in the repository. A newly formed pull request denotes success of the procedure and can be merged as and when required!
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -151,12 +203,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+- [x] Crawl through repositories to detect specified dependency versions
+- [x] Write the validity of the dependency versions with respect to the required specified versions to an output file
+- [x] Update the version of the required dependecies in the desired repository clones
+- [x] Create a pull request on a public as well as private repository belonging to the user
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -178,34 +228,12 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
 Anirudh Mishra - [Anirudh30502](https://twitter.com/Anirudh30502) - mishraanirudhmail@gmail.com
 
 Project Link: [https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra](https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
