@@ -155,12 +155,15 @@ Given below are the libraries/packages required beforehand for smooth functionin
    ```sh
    index <data_file_name>.csv <dependency_name>@<required_version> --update
    ```
-   
+   ![image](https://user-images.githubusercontent.com/63184549/171479844-f8226b2a-5798-466b-91db-49dbfb4cffb6.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171479977-5f22d880-f60c-4a32-85bf-1e19b96a1ddd.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171480204-11e67c71-f94a-432f-948d-3d44a7a4cd97.png)
    
 5. Go to the repositories that you created to check whether a new branch by the name 'updated-branch' has been created in case of inadequate dependency versions to        mark the success of required changes.
-
+   ![image](https://user-images.githubusercontent.com/63184549/171480474-8bf646bf-f652-47b4-9221-9244e3ac4341.png)
+   
 6. Go to the pull requests section in the repository. A newly formed pull request denotes success of the procedure and can be merged as and when required!
-
+   ![image](https://user-images.githubusercontent.com/63184549/171480527-f2f409e0-772f-4ae3-9e5e-ddf72fb7a243.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
