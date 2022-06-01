@@ -9,7 +9,7 @@
 <h3 align="center">SDK Dependency Updation Tool</h3>
 
   <p align="center">
-    This project contains a python script that extracts mentioned repositories, checks the version of the mentioned dependencies by comparing them with the required versions and provides an option to update the dependencies to the required version if they are dated, thus generating a pull request with the updated dependency versions, automating and making it more convenient for the user.
+    This project contains a python script that extracts mentioned repositories, checks the version of the mentioned dependencies by comparing them with the required versions and provides an option to update the dependencies to the required version if they are dated, thus generating a pull request with the updated dependency versions, automating and making it more convenient for the user. Exe File - https://drive.google.com/file/d/1g0ciTKTAuPHpYiWvMdDG5WTWxPy8MVl_/view?usp=sharing
   </p>
 </div>
 
@@ -137,19 +137,25 @@ Given below are the libraries/packages required beforehand for smooth functionin
 
 
 1. Create a CSV file by a custom name <data_file_name> containing two columns namely, the repository name and the repository link.
+  ![image](https://user-images.githubusercontent.com/63184549/171474001-d9b07c42-e859-491c-8861-f64d3168f36d.png)
 
 2. Open terminal/cmd on your desktop and navigate to the directory of the cloned project.
+   ![image](https://user-images.githubusercontent.com/63184549/171472999-e9f4da5f-75f3-4428-b186-cfbf1a93276c.png)
 
 3. Type the following command if you just want an intimation as to which repositories do not match the requirement of the stated version of a dependency
    ```sh
    python ./index.py <data_file_name>.csv <dependency_name>@<required_version> --no-update
    ```
+   ![image](https://user-images.githubusercontent.com/63184549/171473449-fd138453-dc36-4630-a6ad-c6c7b616b9ff.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171475575-18f346b8-b2d2-4ceb-a532-9d28d7eef75d.png)
+  
    If you want to further create a pull request for updation proceed to further steps.
    
 4. Type the following command if you want to create a pull request of the updation changes of the stated dependency to required version
    ```sh
    index <data_file_name>.csv <dependency_name>@<required_version> --update
    ```
+   
    
 5. Go to the repositories that you created to check whether a new branch by the name 'updated-branch' has been created in case of inadequate dependency versions to        mark the success of required changes.
 
