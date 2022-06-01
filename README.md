@@ -10,7 +10,7 @@
 
   <p align="center">
     This project contains a python script that extracts mentioned repositories, checks the version of the mentioned dependencies by comparing them with the required versions and provides an option to update the dependencies to the required version if they are dated, thus generating a pull request with the updated dependency versions, automating and making it more convenient for the user.<br><br>
-    Exe File Link for the tool - https://drive.google.com/file/d/1g0ciTKTAuPHpYiWvMdDG5WTWxPy8MVl_/view?usp=sharing
+    Exe File Link for the tool - https://drive.google.com/drive/folders/1sV3iI87N9dV5WRtaKPcOimOAyde7g6-w?usp=sharing
   </p>
 </div>
 
