@@ -1,31 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7955175&assignment_repo_type=AssignmentRepo)
-<div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -34,19 +6,11 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">SDK Dependency Updation Tool</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    This project contains a python script that extracts mentioned repositories, checks the version of the mentioned dependencies by comparing them with the required versions and provides an option to update the dependencies to the required version if they are dated, thus generating a pull request with the updated dependency versions, automating and making it more convenient for the user.<br><br>
+    Exe File Link for the tool - https://drive.google.com/drive/folders/1sV3iI87N9dV5WRtaKPcOimOAyde7g6-w?usp=sharing
   </p>
 </div>
 
@@ -71,10 +35,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -83,24 +44,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project contains a python script that checks specified repositories for whether the specified dependencies satisfy specified version requirements by crawling the package.json and package-lock.json file. It produces an output file stating the validation of the satisfaction of each repository. Another feature of the project involves updation of the dependencies and creation of a pull request for the same and stating of the pull request link in an output file.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [Node.js](https://nodejs.org/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -109,32 +64,69 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+In order for the tool to work, it is mandatory that the repositories being worked upon belong to the user or contains the user as a collaborator in order for the tool to function appropriately. 
+
+Given below are the libraries/packages required beforehand for smooth functioning of the tool/script along with their install command.
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
+* typer
+  ```sh
+  pip install typer
+  ```
+
+* python-git
+  ```sh
+  pip install python-git
+  ```
+  
+* os
+  ```sh
+  pip install os
+  ```
+  
+* glob
+  ```sh
+  pip install glob
+  ```
+  
+* json
+  ```sh
+  pip install json
+  ```
+
+* requests
+  ```sh
+  pip install requests
+  ```
+  
+* subprocess
+  ```sh
+  pip install subprocess
+  ```
+
+* PyGithub
+  ```sh
+  pip install github
+  ```
+
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra.git)
    ```
-3. Install NPM packages
+2. Install NPM and python packages as mentioned in prerequisite section
    ```sh
-   npm install
+   npm install <package_name>
+   pip install <package_name>
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Generate a personal github access token by navigating to Setting>Developer Options>Personal Access Tokens. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -143,9 +135,43 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Create a CSV file by a custom name <data_file_name> containing two columns namely, the repository name and the repository link.
+  ![image](https://user-images.githubusercontent.com/63184549/171474001-d9b07c42-e859-491c-8861-f64d3168f36d.png)
+
+2. Open terminal/cmd on your desktop and navigate to the directory of the cloned project.
+   ![image](https://user-images.githubusercontent.com/63184549/171472999-e9f4da5f-75f3-4428-b186-cfbf1a93276c.png)
+
+3. Type the following command if you just want an intimation as to which repositories do not match the requirement of the stated version of a dependency
+   ```sh
+   python ./index.py <data_file_name>.csv <dependency_name>@<required_version> --no-update
+   ```
+   Or if you have downloaded the index.exe file you may use the command
+   ```sh
+   index <data_file_name>.csv <dependency_name>@<required_version> --no-update
+   ```
+   ![image](https://user-images.githubusercontent.com/63184549/171484794-97d23345-db97-4b88-b8a2-8258d9c994a2.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171475575-18f346b8-b2d2-4ceb-a532-9d28d7eef75d.png)
+   
+   If you want to further create a pull request for updation proceed to further steps.
+   
+4. Type the following command if you want to create a pull request of the updation changes of the stated dependency to required version
+   ```sh
+   index <data_file_name>.csv <dependency_name>@<required_version> --update
+   ```
+   Or if you have downloaded the index.exe file you may use the command
+   ```sh
+   index <data_file_name>.csv <dependency_name>@<required_version> --update
+   ```
+   ![image](https://user-images.githubusercontent.com/63184549/171484996-4b42bda5-f166-4c90-a710-39e170b9ba1e.png)
+   ![image](https://user-images.githubusercontent.com/63184549/171485209-7f893d9a-8c9b-44a0-95f2-24227646c056.png)
+   
+5. Go to the repositories that you created to check whether a new branch by the name 'updated-branch' has been created in case of inadequate dependency versions to        mark the success of required changes.<br><br>
+   ![image](https://user-images.githubusercontent.com/63184549/171480474-8bf646bf-f652-47b4-9221-9244e3ac4341.png)
+   
+6. Go to the pull requests section in the repository. A newly formed pull request denotes success of the procedure and can be merged as and when required!
+   ![image](https://user-images.githubusercontent.com/63184549/171480527-f2f409e0-772f-4ae3-9e5e-ddf72fb7a243.png)<br><br>
+   ![image](https://user-images.githubusercontent.com/63184549/171480204-11e67c71-f94a-432f-948d-3d44a7a4cd97.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -154,61 +180,20 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+- [x] Crawl through repositories to detect specified dependency versions
+- [x] Write the validity of the dependency versions with respect to the required specified versions to an output file
+- [x] Update the version of the required dependecies in the desired repository clones
+- [x] Create a pull request on a public as well as private repository belonging to the user
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Anirudh Mishra - [Anirudh30502](https://twitter.com/Anirudh30502) - mishraanirudhmail@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra](https://github.com/Anirudh-Mishra/dyte-vit-2022-Anirudh-Mishra)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
